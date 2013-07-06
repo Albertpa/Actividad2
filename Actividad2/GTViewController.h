@@ -1,13 +1,13 @@
-//
-//  GTViewController.h
-//  Actividad2
-//
-//  Created by Angel Rivas Casado on 18/06/12.
-//  Copyright (c) 2012 Guapu Technologies, SL. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
-@interface GTViewController : UIViewController
+@interface GTViewController : UIViewController <UIImagePickerControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIImageView *imgFondo;
+@property (weak, nonatomic) IBOutlet UISlider *sldVelocidad;
+@property (weak, nonatomic) IBOutlet UILabel *lblVelocidad;
+
+@property (weak, nonatomic) IBOutlet UILabel *lblNotificacion;
+
+- (IBAction)selectImagen:(id)sender;
 
 @end

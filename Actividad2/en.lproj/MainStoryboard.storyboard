@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="GTViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
+                    <view key="view" contentMode="scaleToFill" id="3" customClass="GTPizarra">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.70000000000000007" contentMode="scaleToFill" image="Leather02B_Content.png" id="nll-4j-G6h">
+                                <rect key="frame" x="0.0" y="43" width="325" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="bottom" id="KgP-vK-6Uc">
+                                <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="YQr-2k-B3D">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5.25" minValue="0.5" maxValue="10" id="66t-Bh-fi9">
+                                            <rect key="frame" x="12" y="11" width="257" height="23"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="minimumTrackTintColor" red="0.61176472900000001" green="0.47058826679999999" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
+                                            <color key="maximumTrackTintColor" red="0.2433035714" green="0.12218092479999999" blue="0.00050321371640000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="thumbTintColor" red="0.93333339691162109" green="0.81568634510040283" blue="0.62745100259780884" alpha="1" colorSpace="deviceRGB"/>
+                                            <connections>
+                                                <action selector="actualizarEtiqueta:" destination="2" eventType="valueChanged" id="CGj-Sl-08V"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.2433035714" green="0.12218092479999999" blue="0.00050321371640000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.60000000000000009" contentMode="left" text="5.25 s" textAlignment="right" lineBreakMode="middleTruncation" minimumFontSize="10" id="fjV-Z0-efC">
+                                <rect key="frame" x="274" y="427" width="38" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.61176472900000001" green="0.47058826679999999" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Duración de la animación actualizada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UZo-8T-Vgs">
+                                <rect key="frame" x="0.0" y="43" width="320" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.20000000000000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.2433035714" green="0.12218092479999999" blue="0.00050321371640000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <navigationBar contentMode="top" id="MLy-N2-f7j">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.36664939413265307" green="0.18791133161741641" blue="0.0043580828890332395" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Actividad 2" id="lSf-lh-Tcc">
+                                        <barButtonItem key="leftBarButtonItem" title="Borrar" id="2yP-JZ-zqJ">
+                                            <connections>
+                                                <action selector="borrar:" destination="3" id="LmF-p0-i1x"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="kNc-hZ-RUu">
+                                            <connections>
+                                                <action selector="selectImagen:" destination="2" id="2yw-Vc-OXW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="imgFondo" destination="nll-4j-G6h" id="l99-nM-AzR"/>
+                        <outlet property="lblNotificacion" destination="UZo-8T-Vgs" id="GK5-X4-F6g"/>
+                        <outlet property="lblVelocidad" destination="fjV-Z0-efC" id="l75-M9-9Tp"/>
+                        <outlet property="sldVelocidad" destination="66t-Bh-fi9" id="TrD-Ct-CRD"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="266" y="37"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Leather02B_Content.png" width="320" height="367"/>
+    </resources>
+    <classes>
+        <class className="GTPizarra" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTPizarra.h"/>
+            <relationships>
+                <relationship kind="action" name="borrar:"/>
+            </relationships>
+        </class>
+        <class className="GTViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actualizarEtiqueta:"/>
+                <relationship kind="action" name="selectImagen:"/>
+                <relationship kind="outlet" name="imgFondo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblNotificacion" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblVelocidad" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="sldVelocidad" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -15,6 +15,14 @@
 		0B188E88158EBCCA0040A45E /* GTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B188E87158EBCCA0040A45E /* GTAppDelegate.m */; };
 		0B188E8B158EBCCA0040A45E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B188E89158EBCCA0040A45E /* MainStoryboard.storyboard */; };
 		0B188E8E158EBCCA0040A45E /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B188E8D158EBCCA0040A45E /* GTViewController.m */; };
+		0B188EAA158EC0410040A45E /* Leather02B_Content.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B188EA8158EC0410040A45E /* Leather02B_Content.png */; };
+		0B188EAB158EC0410040A45E /* Leather02B_Content@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B188EA9158EC0410040A45E /* Leather02B_Content@2x.png */; };
+		0B188EB4158ECF7A0040A45E /* GTPizarra.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B188EB3158ECF7A0040A45E /* GTPizarra.m */; };
+		0B65A275158ED23500CBF6C6 /* GTLinea.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B65A274158ED23500CBF6C6 /* GTLinea.m */; };
+		0B65A297158EF50800CBF6C6 /* icono_iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B65A296158EF50800CBF6C6 /* icono_iPhone@2x.png */; };
+		0B65A299158EF50D00CBF6C6 /* icono_iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B65A298158EF50D00CBF6C6 /* icono_iPhone.png */; };
+		0B65A29B158EF54800CBF6C6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B65A29A158EF54800CBF6C6 /* Default@2x.png */; };
+		0B65A29D158EF54E00CBF6C6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B65A29C158EF54E00CBF6C6 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +30,25 @@
 		0B188E77158EBCCA0040A45E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0B188E79158EBCCA0040A45E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0B188E7B158EBCCA0040A45E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0B188E7F158EBCCA0040A45E /* Actividad2-Info.plist */ = {isa = PBXFileReference; path = "Actividad2-Info.plist"; sourceTree = "<group>"; };
+		0B188E7F158EBCCA0040A45E /* Actividad2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Actividad2-Info.plist"; sourceTree = "<group>"; };
 		0B188E81158EBCCA0040A45E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0B188E83158EBCCA0040A45E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0B188E85158EBCCA0040A45E /* Actividad2-Prefix.pch */ = {isa = PBXFileReference; path = "Actividad2-Prefix.pch"; sourceTree = "<group>"; };
-		0B188E86158EBCCA0040A45E /* GTAppDelegate.h */ = {isa = PBXFileReference; path = GTAppDelegate.h; sourceTree = "<group>"; };
+		0B188E85158EBCCA0040A45E /* Actividad2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Actividad2-Prefix.pch"; sourceTree = "<group>"; };
+		0B188E86158EBCCA0040A45E /* GTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDelegate.h; sourceTree = "<group>"; };
 		0B188E87158EBCCA0040A45E /* GTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTAppDelegate.m; sourceTree = "<group>"; };
 		0B188E8A158EBCCA0040A45E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		0B188E8C158EBCCA0040A45E /* GTViewController.h */ = {isa = PBXFileReference; path = GTViewController.h; sourceTree = "<group>"; };
+		0B188E8C158EBCCA0040A45E /* GTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTViewController.h; sourceTree = "<group>"; };
 		0B188E8D158EBCCA0040A45E /* GTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTViewController.m; sourceTree = "<group>"; };
+		0B188EA8158EC0410040A45E /* Leather02B_Content.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leather02B_Content.png; sourceTree = "<group>"; };
+		0B188EA9158EC0410040A45E /* Leather02B_Content@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Leather02B_Content@2x.png"; sourceTree = "<group>"; };
+		0B188EB2158ECF7A0040A45E /* GTPizarra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTPizarra.h; sourceTree = "<group>"; };
+		0B188EB3158ECF7A0040A45E /* GTPizarra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTPizarra.m; sourceTree = "<group>"; };
+		0B65A273158ED23500CBF6C6 /* GTLinea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTLinea.h; sourceTree = "<group>"; };
+		0B65A274158ED23500CBF6C6 /* GTLinea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLinea.m; sourceTree = "<group>"; };
+		0B65A296158EF50800CBF6C6 /* icono_iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono_iPhone@2x.png"; sourceTree = "<group>"; };
+		0B65A298158EF50D00CBF6C6 /* icono_iPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono_iPhone.png; sourceTree = "<group>"; };
+		0B65A29A158EF54800CBF6C6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0B65A29C158EF54E00CBF6C6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,12 @@
 		0B188E68158EBCCA0040A45E = {
 			isa = PBXGroup;
 			children = (
+				0B65A29C158EF54E00CBF6C6 /* Default.png */,
+				0B65A29A158EF54800CBF6C6 /* Default@2x.png */,
+				0B65A298158EF50D00CBF6C6 /* icono_iPhone.png */,
+				0B65A296158EF50800CBF6C6 /* icono_iPhone@2x.png */,
+				0B188EA8158EC0410040A45E /* Leather02B_Content.png */,
+				0B188EA9158EC0410040A45E /* Leather02B_Content@2x.png */,
 				0B188E7D158EBCCA0040A45E /* Actividad2 */,
 				0B188E76158EBCCA0040A45E /* Frameworks */,
 				0B188E74158EBCCA0040A45E /* Products */,
@@ -77,12 +101,16 @@
 		0B188E7D158EBCCA0040A45E /* Actividad2 */ = {
 			isa = PBXGroup;
 			children = (
+				0B188E89158EBCCA0040A45E /* MainStoryboard.storyboard */,
 				0B188E86158EBCCA0040A45E /* GTAppDelegate.h */,
 				0B188E87158EBCCA0040A45E /* GTAppDelegate.m */,
-				0B188E89158EBCCA0040A45E /* MainStoryboard.storyboard */,
 				0B188E8C158EBCCA0040A45E /* GTViewController.h */,
 				0B188E8D158EBCCA0040A45E /* GTViewController.m */,
 				0B188E7E158EBCCA0040A45E /* Supporting Files */,
+				0B188EB2158ECF7A0040A45E /* GTPizarra.h */,
+				0B188EB3158ECF7A0040A45E /* GTPizarra.m */,
+				0B65A273158ED23500CBF6C6 /* GTLinea.h */,
+				0B65A274158ED23500CBF6C6 /* GTLinea.m */,
 			);
 			path = Actividad2;
 			sourceTree = "<group>";
@@ -152,6 +180,12 @@
 			files = (
 				0B188E82158EBCCA0040A45E /* InfoPlist.strings in Resources */,
 				0B188E8B158EBCCA0040A45E /* MainStoryboard.storyboard in Resources */,
+				0B188EAA158EC0410040A45E /* Leather02B_Content.png in Resources */,
+				0B188EAB158EC0410040A45E /* Leather02B_Content@2x.png in Resources */,
+				0B65A297158EF50800CBF6C6 /* icono_iPhone@2x.png in Resources */,
+				0B65A299158EF50D00CBF6C6 /* icono_iPhone.png in Resources */,
+				0B65A29B158EF54800CBF6C6 /* Default@2x.png in Resources */,
+				0B65A29D158EF54E00CBF6C6 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +199,8 @@
 				0B188E84158EBCCA0040A45E /* main.m in Sources */,
 				0B188E88158EBCCA0040A45E /* GTAppDelegate.m in Sources */,
 				0B188E8E158EBCCA0040A45E /* GTViewController.m in Sources */,
+				0B188EB4158ECF7A0040A45E /* GTPizarra.m in Sources */,
+				0B65A275158ED23500CBF6C6 /* GTLinea.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +277,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Actividad2/Actividad2-Prefix.pch";
 				INFOPLIST_FILE = "Actividad2/Actividad2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -252,6 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Actividad2/Actividad2-Prefix.pch";
 				INFOPLIST_FILE = "Actividad2/Actividad2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -276,6 +314,7 @@
 				0B188E93158EBCCA0040A45E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
