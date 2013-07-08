@@ -90,25 +90,6 @@
     <resources>
         <image name="Leather02B_Content.png" width="320" height="367"/>
     </resources>
-    <classes>
-        <class className="GTPizarra" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTPizarra.h"/>
-            <relationships>
-                <relationship kind="action" name="borrar:"/>
-            </relationships>
-        </class>
-        <class className="GTViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GTViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="actualizarEtiqueta:"/>
-                <relationship kind="action" name="selectImagen:"/>
-                <relationship kind="outlet" name="imgFondo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="lblNotificacion" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lblVelocidad" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="sldVelocidad" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -35,13 +35,24 @@
     //Asignar la propiedad alpha de imgFondo a 0.
     //Asignar la nueva imagen a imgFondo.
 //yo
-    self.imgFondo.image = image;
     [self dismissModalViewControllerAnimated:YES];
+    [self.imgFondo setAlpha:0];
+    self.imgFondo.image = image;
+   
 //fyo
     
     //Animar el cambio a 0.7 de la propiedad alpha de imgFondo.
     //Asignar la duracion de la animación mediante la propiedad value de sldVelocidad.
     //Establecer una curva Linear.
+    
+//yo
+   
+    [UIView beginAnimations:@"MiAnimación2" context:nil];
+    [UIView setAnimationDuration:self.sldVelocidad.value];
+    [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+    [self.imgFondo setAlpha:0.7];
+    [UIView commitAnimations];
+//yo
 
 }
 
@@ -52,11 +63,14 @@
     //    alpha = 1
     
 //yo
+    CGPoint centro = lblNotificacion.center;
+    centro.y = 53;
+    lblNotificacion.center = centro;
+
     [self.lblNotificacion setAlpha:1];
-    NSLog(@"valor->%@", [change valueForKey:@"new"]);
-    
-   
 //fyo
+    
+    
     
     
     //Animar el cambio de las siguiente propiedades de lblNotificacion:
@@ -68,10 +82,19 @@
     //NOTA: El retardo de una animación se asgina mediante el método +setAnimationDelay:
 
 //yo
-    //[self.lblNotificacion setAlpha:0];
+    [UIView beginAnimations:@"MiAnimación" context:nil];
+    [UIView setAnimationDuration:1];
+    [UIView setAnimationDelay:2];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+  
+    centro.y = 20;
+    lblNotificacion.center = centro;
+    [self.lblNotificacion setAlpha:0];
+    
+    
+    [UIView commitAnimations];
+    
     NSLog(@"valor->%@", [change valueForKey:@"new"]);
-    
-    
 //fyo
 }
 
